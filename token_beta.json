@@ -1,0 +1,136 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "special": true,
+      "content": "[UNK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    },
+    {
+      "id": 1,
+      "special": true,
+      "content": "<|endoftext|>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false
+    }
+  ],
+  "normalizer": {
+    "type": "Sequence",
+    "normalizers": [
+      {
+        "type": "NFD"
+      },
+      {
+        "type": "Lowercase"
+      },
+      {
+        "type": "StripAccents"
+      }
+    ]
+  },
+  "pre_tokenizer": {
+    "type": "Sequence",
+    "pretokenizers": [
+      {
+        "type": "WhitespaceSplit"
+      }
+    ]
+  },
+  "post_processor": null,
+  "decoder": null,
+  "model": {
+    "type": "WordPiece",
+    "unk_token": "[UNK]",
+    "continuing_subword_prefix": "##",
+    "max_input_chars_per_word": 100,
+    "vocab": {
+      "[UNK]": 0,
+      "<|endoftext|>": 1,
+      "-": 2,
+      "/": 3,
+      "0": 4,
+      "1": 5,
+      "2": 6,
+      "3": 7,
+      "4": 8,
+      "5": 9,
+      "6": 10,
+      "7": 11,
+      "8": 12,
+      "9": 13,
+      "=": 14,
+      "a": 15,
+      "b": 16,
+      "c": 17,
+      "d": 18,
+      "e": 19,
+      "f": 20,
+      "g": 21,
+      "h": 22,
+      "i": 23,
+      "j": 24,
+      "k": 25,
+      "l": 26,
+      "m": 27,
+      "n": 28,
+      "o": 29,
+      "p": 30,
+      "q": 31,
+      "r": 32,
+      "s": 33,
+      "t": 34,
+      "u": 35,
+      "v": 36,
+      "w": 37,
+      "x": 38,
+      "y": 39,
+      "z": 40,
+      "##q": 41,
+      "##x": 42,
+      "##z": 43,
+      "##b": 44,
+      "##u": 45,
+      "##s": 46,
+      "##y": 47,
+      "##f": 48,
+      "##o": 49,
+      "##t": 50,
+      "##e": 51,
+      "##p": 52,
+      "##i": 53,
+      "##l": 54,
+      "##n": 55,
+      "##w": 56,
+      "##v": 57,
+      "##c": 58,
+      "##m": 59,
+      "##h": 60,
+      "##r": 61,
+      "##a": 62,
+      "##j": 63,
+      "##d": 64,
+      "##k": 65,
+      "##g": 66,
+      "##2": 67,
+      "##0": 68,
+      "##4": 69,
+      "##1": 70,
+      "##8": 71,
+      "##3": 72,
+      "##6": 73,
+      "##9": 74,
+      "##7": 75,
+      "##/": 76,
+      "##5": 77,
+      "##=": 78
+    }
+  }
+}
